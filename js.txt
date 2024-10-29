@@ -1,0 +1,704 @@
+                                                        javaScript
+                                                        ----------
+
+    09-09-2024
+    ----------
+
+    -used in both frontend and backend
+    -frontend - to provide behaviour to a web application.
+    -backend - to do logical operations.
+    -browser understanding language.
+    -node js - its an environment to run js outside the browser.
+    -single thread programming language == line by line execution.
+    -dynamically typed language.
+    -supports both procedural and object oriented programming.
+
+    procedural programming - its a programming paradigm in which both data and functions are considered as two different entity.
+                           - more focused on sequential execution of code.
+    
+    display a content
+    ------------------
+
+    console.log(content)
+
+    run a file -- node filename.js
+
+    datatype
+    ---------
+
+    primitive datatype(basic datatype)
+                                        1 string : value should be inside single or double quotes
+                                        2 number
+                                        3 boolean : true or flase
+                                        4 undefined : variable which is declared but not assigned a value.
+                                        5 Null : intentional absence of value
+                                        6 bigInt : large numbers. eg - 2^56
+                                        7 symbols : represent a unique identifier
+                                    
+    non-primitive datatype (combination of primitive datatype)
+                                        8 object : {key: value}
+
+    variables
+    ---------
+
+    - used to store data
+    - can only store single data at a time.
+    - used to create variables : identifiers
+        rules
+        -----
+        1. it can start with a-z A-Z,dollar symbol($),underscore(_), js prefer letters.
+        2. variable name should not start with digits, but the subsiquent characters can be a digit.
+        3. if there is more than one word in a variable name, 
+                                - they can be seperated by underscores or
+                                - the subsiquent words should start with capital letter. (camelCase)
+                                - there should not be space between names.
+                                
+    syntax to declare a variable.
+    ----------------------------
+
+    1. variableName = value
+    2. keyword variableName = value
+
+    keywords
+    ---------
+    - they are a set of reserved words which provide special meaning to a variable.
+    - these keywords cannot be used for any other.
+
+            - const - reassigning not possible
+
+            - let - reassigning possible.
+                  - hoisting not possible.
+                  - block level scope
+
+            - var - reassigning possible.
+                  - hoisting is possible.
+
+    variable hoisting
+    ------------------
+    defining a variable before it is declared.
+
+    concatenation
+    -------------
+    addition of different dataTypes.
+
+    number + number = number
+    string + string = string
+    string + number = string
+
+    typeof() - predefined function to know the type
+
+
+10-09-2024
+===========
+
+template literals
+-----------------
+- way of displaying contents.
+- syntax -
+            contents ${variableName}
+
+operators
+---------
+
+1. assignment operator (=)
+2. Arithmetic operator (+,-,/,*,**,%)
+3. Logical operator 
+      - it return boolean values
+      - can be used between Relational operations.
+            -AND(&&)
+                  - only returns true if 2 values are true. otherwise false.
+            -OR(||)
+                  - only returns false of 2 values are false. otherwise all true.
+            -NOT(!=)
+4. Relational operator (>,>=,<,<=,==,===,!=)
+      -less than <
+      -less than or equal to <=
+      -greater than >
+      -greater than or equal to >=
+      -double equalto == -only checks values.
+      -triple equal to === -checks datatype and values.
+      -Not equal to !=
+5. increment(++) and decrement(--) operator
+6. short hand operator
+      -eg x+=1
+7. ternary operator
+      conditiion?true condition: false statement
+8. truthy operator
+
+
+q1) write a program to swap between two given numbers.
+
+conditional statements / decision making statements
+---------------------------------------------------
+
+1. if else statements
+--------------------
+      syntax
+      ---------
+      if(conditiion){statements}
+
+      else if(conditiion){statements}
+
+      else{statements}
+
+
+
+q2) write a program to print a given person is eligible to vote.
+q3) write a program to check whether a number is positive or negative
+q4) write a program to find the largest number among two numbers.
+q5) write a program to find largerst among 3 given numbers.
+q6) write a program to display the second largest and arrange these numbers in decending order.
+
+18-09-2024
+==========
+
+loops
+------
+- to do task repeated at a particular position.
+      while loops
+      ------------
+      variable initialization
+      while(conditiion){
+            statement
+      }
+
+q1) write a program to print numbers from 1 to 5
+q2) write a program to print numbers from 10 to 1
+q3) write a program to print all even numbers between 1 to 50
+q4) write a program to print sum of all numbers between 1 to 10
+q5) w.a.p to print the following o/p for the given input
+      i/p 2       3          4
+          24      369        4936
+
+      to convert a string to number = number(string)
+
+q6) w.a.p to print reverse of a number
+
+      math.floor - to remove decimal point
+
+q7) write a program to check whether the given number is palindrome or not
+
+19-09-2024
+==========
+
+q7) write a program to print factorial of a given number.
+q8) write a program to find the given 3 digit number is Amstrong or not
+            
+            Amstrong - 153 - 1^3 + 5^3 + 3^3 = 153
+
+q9) write a program to display whose exponential is in the range of 8 to 36. where the power(exponential) value can be determined by the user.
+      power =2 
+      1**2 2**2 3**2
+      3,4,5,6
+
+For loops
+=========
+
+syntax - for(variable initialization;conditiion;increment or decrement){
+
+      statement
+
+}
+
+q1) write a program to print numbers from 1 to 5 using for loop
+q2) write a program to print numbers from 10 to 1 using for loop 
+q3) write a program to find factorial of a number
+
+20-09-2024
+==========
+
+q4) write a for loop which have the capacity to iterate upto 10 but should print till 5
+
+break = in order to forcefully exit a loop.
+
+q5) write a program to check whether a number is prime or not
+
+hw) write a program to print all prime numbers between 2 to 15
+hw) write a program to display all Amstrong numbers between 8-100
+
+q6) write a program to find GCD/HCF of any 2 given number.
+
+Nested loops
+------------
+
+loop inside another loop
+
+pattern printing
+----------------
+
+q1) # # # #
+    # # # #
+    # # # #
+    # # # #
+
+q2) 1 1 1 1
+    2 2 2 2
+    3 3 3 3 
+    4 4 4 4
+
+23-09-2024
+==========
+
+q3) 1 2 3 4
+    1 2 3 4
+    1 2 3 4
+    1 2 3 4
+
+24-09-2024
+===========
+
+q4)*
+   * *
+   * * *
+   * * * *
+
+q5) 1
+    2 2 
+    3 3 3 
+    4 4 4 4
+
+q6) 1
+    1 2
+    1 2 3
+    1 2 3 4
+
+q7) * * * *
+    * * *
+    * *
+    *
+
+hw) *
+    * *
+    * * *
+    * * * *
+    * * * * *
+    * * * *
+    * * *
+    * *
+    *
+
+q8)               *
+                 * *
+                * * *
+               * * * *
+
+q9)               *
+                *   *
+              *       *
+            *   *   *   *
+
+25-09-2024
+==========
+
+q10) * * * * * * *
+     *           *
+     *           *
+     *           *
+     *           *
+     *           *
+     * * * * * * *
+
+q11)  * * * * *
+       *     *
+          *
+       *     *
+      * * * * *
+
+q12) 1
+     0 1
+     1 0 1
+     0 1 0 1
+
+hw)              *
+                * *
+               * * *
+              * * * *
+             * * * * *
+            * * * * * *
+             * * * * *
+              * * * * 
+               * * *
+                * *
+                 *
+
+q13)                    11
+                     12 13 14
+                  15 16 17 18 19
+               20 21 22 23 24 25 26
+            27 28 29 30 31 32 33 34 35
+
+
+26-09-2024
+==========
+
+                                                FUNCTIONS
+                                                ---------
+
+            - To do tasks repeatedly at different locations of the programming file.
+            - Helps to reduce number of codes in the programming file.
+            - It has two parts
+                              1) function definition - where the task is defined.
+
+                              syntax = function functionName(arg1,arg2,...argn){
+
+                              }
+
+                              2) function call - To execute the task.
+
+                              syntax = functionName()
+
+                              Arguments/parameters : Values outside the function.(optional)
+
+            - variables inside a function is having functional scope - it cannot be accessed outside the function.
+            - In order to use a variable outside the function we need to use return statement.
+            - statement after the return statement will not execute hence return statement should be place as the last statement of the function.
+
+
+q2) write a javaScript function to find the cube of a given number.
+
+q3) w.a.p to check given number is odd or even.
+
+q4) w.a.p to check whether a given number is positive or negative.
+
+Arrow functions
+---------------
+
+- ES6 - Arrow function
+      - why es6 prefer arrow functions
+
+function definition
+-------------------
+variableName = ()=> statement
+
+function call
+--------------
+variableName()
+
+function hoisting
+-----------------
+function call before function definition
+
+- normal/regular function - hoisting possible.
+- arrow function - hoisting not possible.
+
+category of function
+--------------------
+1) predefined functions/builtin functions
+   
+   eg - console.log,math.floor,eval,typeof...
+
+2) call back functions
+
+   A function calling another function.
+
+3) Nested function
+
+   - A function inside another function.
+   - Closure property
+     ----------------
+     parent can access child. child cannot access parent.
+      
+     child can access parent variables , parent cannot access child variables.
+
+4) synchronous function
+
+   - function which doesnot have any time delay.
+
+5) Asynchronous function
+   
+   - functions with a time delay
+   - setTimeOut(), api calls
+
+   27-09-2024
+   ==========
+
+data structure
+--------------
+- A specialized format for organizing,processing, retrieving and storing data.
+- stack, queue, linked list, list, array
+
+Array
+-----
+- Unlike variables, array is a single variable which can store more than one data of different datatype.
+- where each items in an array is seperated by commas and enclosed within a square bracket.
+- arrays used in ecommerce websites. (cart)
+- array in js is infinite.(does not need to specify length of an array)
+- mutable(changable)
+
+variableName = [item1,item2,...itemn]
+
+- key:value
+- index position - starts 0 end - length-1
+- value - item
+- length - Total number of items in a array.(total number of memory locations.)
+
+Array operations
+----------------
+
+1) push() - to add items to an array as the last element.
+2) unshift() - to add item ast the starting.
+3) pop() - to remove an item from the end of an array.
+4) shift() - to remove first item from the array.
+5) sort() - to arrange elements in an array in ascending or decending order.
+6) flat(depth) - used to change the dimension of an array.
+               - depth=infinity directly changes to one dimension.
+7) forEach() - used to access each items from a given items. faster than for loop in array.
+8) map() - it access each items from the given array and returns a new array having the same number of elements.
+9) reduce() - it returns a single value from array eg - highest,lowest,sum,average.
+10) filter() - create a new array with elements satisfying a particular condition.
+11) some() - returns boolean value based on condition.
+12) find() - returns the first item satisfying the condition.
+13) includes() - returns boolean value based on items in array.
+14) indexOf(item) - return index of the item.
+15) lastIndexOf() - return the last index of the item.
+16) splice(startindex,deletecount,additem) - To add and remove items at any point in a given array.
+17) slice(startIndex,endIndex) - It returns selected number of items from a given array. The end index will be excluded. Accepts negative values.
+18) reduceRight() - 
+
+different ways to access array item
+-----------------------------------
+
+1) regular for loop.
+2) in method - returns index value of an array.
+3) of method - returns directly the values of an array.
+
+30-09-2024
+==========
+
+Truthy operator
+
+!flag && "statement"
+
+conditiion && true statement
+
+1-10-2024
+=========
+
+linear approach
+---------------
+- checks /compares each element of an array
+- time consuming
+- small arrays
+- can be applied in any type of array
+
+Binary search
+-------------
+- will not check/compare every element in the array.
+- it is not time consuming compared to linear approach.
+- used in large dataset/array.
+- can be used only in sorted array.
+
+sorting of an array
+-------------------
+a.sort((var1,var2)=>a-b) - for ascending
+a.sort((var1,var2)=>b-a) - for decending
+
+hw) write a program to arrange the given array in descending order without using builtin funtion.
+
+binary search algorithm
+-----------------------
+1) create variable low with first index of array and variable high with the last index of array.
+2) inside a loop calculate mid index value of array = math.floor(low+high/2)
+3) check if the mid is equal to key
+4) if key is less than mid then shift high to the mid-1 value
+5) if key is greater than mid then shift low to the mid+1 value
+6) repeat until the low and high meets.
+
+hw) draw the flowchart of the above algorithm. write manual execution of this program.
+
+03-10-2024
+==========
+
+Nested array
+-------------
+
+- array inside another array.
+
+08-10-2024
+==========
+
+                                                      string
+                                                      ------
+
+- sequence of characters stored in different memory locations.
+- immutable(non changable)
+
+string methods
+--------------
+
+1) toUpperCase() - To convert into capital letter.
+2) toLowerCase() - To convert into small letter.
+3) startsWith() - Check whether a given string starts with a particular character. 
+                - Returns boolean values. 
+                - Case sensitive.
+4) endsWith() - Check whether a given string ends with a particular character
+              - Returns boolean value.
+              - Case sensitive.
+5) subString() - To create a new string from the given string.
+               - End index excluded.
+               - No negative values.
+6) slice() - To create a new string from the given string.
+           - Accepts negative values.
+7) trim() - removes space at the ends of the given string.
+8) split() - split the given string based on a seperator.
+           - returns an array
+9) Array.from() - return a new array with induvidual characters as the element.
+10) replace(search_value,replace_value) - replaces the first matching character.
+11) replaceAll() - to replace all matching characters.
+
+
+q1) write a program to check whether a number is mobile number or not using function.
+q1) write a program to check whether given id is gmail or not.
+q1) write a program to check whether the given word starts with letter q.
+q1) w.a.p to print all the vowels in the given string.
+hw) w.a.p to check whether a given string is palindrome or not. eg - malayalam
+
+09-10-2024
+==========
+
+object
+------
+- object is a single variable which can store more than one data of different datatype has key value pairs that are seperated by commas and       enclosed within curly brackets.
+- unlike array it can store more than one data with higher clarity.
+- syntax = variableName = {   key1:value1,
+                              key2:value2,
+                              key3:value3,
+                              keyn:valuen
+                           }
+- get data = - objectName["key"] - used when the key is a variable and also there is exact key.
+             - objectName.key - used when there is a exact key present in object.
+             - in operator
+- add data = - objectName[key]=value
+- update data = - objectName[key]=value
+- delete data = - delete objectName.key
+
+
+q2) write a program to check whether empdesg is present in employee object.
+q2) w.a.p to check whether empSalary is present or not.if not present add new key as empSalary with value as 25000
+
+10-10-2024
+==========
+
+q1) //w.a.p to find the number count from the given array and display it as object
+      //o/p:{10:3,20:3,30:2,50:1,60:1}
+
+14-10-2024
+==========
+
+spread operator - to merge two arrays. symbol - ...
+
+15-10-2-2024
+============
+
+object oriented programming system - oops
+-----------------------------------------
+
+- its a modern paradigm(style) which consider real time entity into objects and class.
+- here both data(properties) and function(method) are considered as a single entity.
+
+- properties - variables.
+- methods - functions.
+
+class
+------
+- blueprint which contains common features based on which an object is created.
+- syntax - class className{
+      // properties
+      // methods
+      // constructor
+}
+- properties,methods or constructors are not always present inside a class.(optional)
+
+object
+-------
+- are the real time entity that is created based on the class.
+- instance of a class.
+
+reference
+---------
+- memory lacation where properties and methods are stored.
+
+constructor
+-----------
+- its a predefined method which self invoke when a instance for a class is created.
+- used to initialize value of properties.
+- syntax - constructor(Arguments){}
+- if constructor is accepting Arguments value have to be passed using class.
+
+instance variable(this.propertyName) - accessing properties or methods inside a class.
+method syntax - name(){}
+object syntax - const objectName = new className()
+
+17-10-2024
+==========
+
+pillars of oops
+------------------
+1) inheritance
+2) polimorphism
+3) encapsulation
+4) abstraction
+
+inheritance
+------------
+- used to access properties and methods of on e class to another class
+- increases reusability
+- keyword - extends
+
+- parent class/super class/base class - from where the properties and methods are accessed.
+- child class/sub class/derived class  -  the class which access the properties and methods.
+
+object inheritance(in procedural programming)
+------------------
+keyword - __proto__
+
+multi level inheritance - access methods and properties indirectly from parents classes.
+
+polimorphism
+------------
+poly - many
+morphism - forms
+
+      method overloading 
+     --------------------
+      - methods with same name but different arguments.
+      - it executes based on the number of arguments.
+      - javaScript does not support method overloading.
+      - spread operator(...) - returns array of arguments. method overloading can be implemented using spread operator.
+
+      method overriding 
+      --------------------
+      - methods with same name and same number of arguments.
+      - executes last written method.
+      - js supports this concept
+
+encapsulation
+-------------
+
+
+abstraction
+-----------
+
+
+Exception handling
+------------------
+
+Exceptions : run time errors.
+
+try-catch block
+---------------
+syntax
+---------
+
+try{
+      statements - those statements which might commit errors.
+}
+catch{
+      statements to resolve the error
+}
+
+
+finally{
+      statements which need to be executed in both try and catch classes
+      optional
+}

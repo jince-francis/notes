@@ -1,0 +1,194 @@
+                                            JavaScript - frontend
+                                            ----------------------
+
+Browser 
+-------
+- Application which provides a interface to communicate with the resources available in the internet. eg - chrome.
+
+DOM - document object model
+---------------------------
+- Tree structure of HTML document
+- Created by browser.
+
+binding js with HTML
+----------------------
+
+1) internal js
+    - script tag 
+2) External js
+    - external file with .js 
+    - script src "path"
+    - <script src=""></script>
+
+how to access html elements
+---------------------------
+1) document.getElementByTagname(tagName) - returns a html collection
+2) document.getElementByClassName(className) - returns a html collection.
+3) document.getElementById(id) - returns directly the element.
+4) document.querySelector(tagname/ #id/ .class) - return the first matching element
+5) document.querySelectorAll() - return all matching element as array(nodelist)
+
+how to update content in a html element
+---------------------------------------
+.innerHTML
+
+Events
+------
+Actions performed by the user which leads to a change in dom structure.
+eg- click,change,keydown,submit,load
+
+21-10-2024
+============
+
+date class - can be used to fetch current date and time from system.
+
+22-10-2024
+==========
+
+database - used to store data.
+         - data is stored as key: value pairs were key must be string.
+
+Browser storage
+----------------
+- to store data inside browser.
+        - limited amount of data.
+        - there are different types of browser storages.
+- local storage
+     - stored as key value pairs.
+     - limited storage
+     - permenent storage.
+- session storage
+     - stored as key value pairs
+     - limited amount of data stored.
+     - temporary storage.
+
+Local Storage - operations
+--------------------------
+
+1) add data / update data - localStorage.setItem("key":"value") key and value must be string.
+2) get data - localStorage.getItem("key")
+3) delete data - localStorage.removeItem("key")
+
+23-10-2024
+==========
+
+json.stringify - to convert into string.
+json.parse - to convert into object
+window.location - to navigate to another webpage.
+
+API
+---
+- Application programming interface
+- used to communicate between two applications available in the internet.
+
+types of Api - based on scope
+-----------------------------
+1) public api - publically accesible.
+2) private api - single company.
+3) partner api - more than one company - autherization required
+4) composite api - combination of all the above.
+
+Api architecture
+----------------
+1) restful api -
+                
+refer: 2) soap api
+       3) rpc api(remote procedural call)
+
+24-10-2024
+==========w
+
+RESTFUL API ARCHITECTURE
+------------------------
+
+refer: https,ftp,smtp,udp,...etc 
+
+HTTP 
+----
+- hyper text transer protocol
+- set of rules need to be allowed while communicate through internet
+
+    http request
+    -------------
+    1) POST - to send data.
+    2) GET - to retrieve data.
+    3) PUT - to update data.
+    4) DELETE - to remove data.
+
+JSON
+----
+- JavaScript object notation.
+- common format to communicate between the two applications.
+- format -
+            {
+                key:value where key and value must be string
+            }
+- request have two parts.
+    1) head - type of data, autherization.
+    2) body - data is placed in the request body.
+
+response series
+---------------
+1) 1xx series - information.
+2) 2xx series - success response.
+3) 3xx series - redirection.
+4) 4xx series - client side error.
+5) 5xx series - server side error.
+
+URL - 
+
+                        head -body - json
+        client  -----------request------------->server
+             
+               <-----------response--------------
+                            200 series
+
+Api testing tools
+-----------------
+
+1) thunder client - vs code extension.
+2) postman - real tool.
+
+Different techniques to create api
+----------------------------------
+1) AJAX
+2) FETCH
+3) async - await
+
+AJAX
+-----
+ - ASYNCHRONOUS javaScript XML.
+ - xmlhttprequestclass() - predefined.
+ - open() - connect with the application.
+ - send() - used to send the request.
+ - readyState - property inside this class.
+              - its value changes from 1-4 - onreadyStateChange() - to view the change in state.
+              - when the readyState value reaches 4 we will recieve response.
+ - responseText - response is recieved in this property.
+ - 
+
+
+ hw: users - username ,email, address-street,phone,website,company-name.   - api call
+
+
+ 25-10-2024
+ ==========
+
+Fetch
+-----
+- promise() - class
+- three phase/state
+    1) resolve - then()
+    2) pending
+    3) reject - catch()
+
+Math.random() - generates random numbers between 0-1
+
+async - await
+--------------
+- can store the data in a variable
+- single then()
+- works based on promise
+
+async - function inside which the api call is done.
+await - api call

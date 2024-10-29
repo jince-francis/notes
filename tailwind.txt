@@ -1,0 +1,10 @@
+                                                TAILWIND CSS
+                                                ------------
+
+- css framework
+- Rapidly build modern websites without ever leaving your HTML.
+
+usage
+-----
+1) cdn
+2) install
